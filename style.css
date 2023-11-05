@@ -1,56 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@300&family=Teko:wght@300;400&display=swap');
+
+
+/*     */
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0% auto;
+    min-width: 320px;
 }
 
 /* Aqui temos comandos usados para configurar o header */
-.conteiner-imagem-topo {
-    width: 250px;
-    height: 250px;
+
+.cabecalho {
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
-.conteiner-imagem-meio img {
+
+.info {
+    position: relative;
+    
+}
+
+.nomes {
+    width: 100%;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+}
+
+.imagem-topo img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    
+}
+
+.imagem-meio img {
     width: 100%;
     max-width: 400px;
+    height: auto;
     border-radius: 50%;
-    margin-left: 80px;
+    margin: 0 auto;
+    
+    
 }
-.conteiner-info , .conteiner-imagem-meio {
-    display: inline-block;
+.imagem-meio,.info   {
+    width: 50%;
 
 }
 /*Aqui temos configurações do h1,h2,h3 */
 .cabecalho h1 {
-    margin-left: 40px;
+    
     font-size: 48px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .cabecalho h2 {
-    margin-left: 40px;
+    
     font-size: 4rem;
     margin-top: 0;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .cabecalho h3 {
-    margin-left: 40px;
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    text-align: center;
 }
+
+/*                Navegação                */
+.navegacao {
+    background-color: #c8a99a; 
+    height: 60px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+.navegacao li {
+    padding: 80px;
+}
+.navegacao a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.navegacao ul {
+    width: 100%;
+    
+    
+}
+.navegacao a:hover {
+    text-decoration: underline; 
+    
+}
+
+/* Aqui tem a parte de implementação das escritas textos e subtitulos */
+
+.SobreConfiguracao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ece0da;
+}
+.ExperienciaConfiguracao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.EducaçaoConfiguracao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ece0da;
+}
+.ProjetosConfiguracao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.ContatoConfiguracao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ece0da;
+}
+.subTitulos {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center; 
+}
+.textos {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.subTitulos {
+    width: 30%;
+}
+.textos {
+    width: 70%;
+}
+
+/* footer */
+
+.footer {
+    background-color: #c8a99a;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+
+}
+
 /*Regula os nomes e a imagem do topo */
-@media (max-width: 768px) {
-    .conteiner-nomes {
+
+@media (max-width: 1260px) {
+    .navegacao li {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .cabecalho {
+        flex-direction: column; 
+        height: auto;
+    }
+    .info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+    .imagem-meio {
+        display: block;
+        margin: 0 auto;
+    }
+    .imagem-meio img{
+        display: block;
+    }
+    .navegacao li { 
+        padding: 40px;
+    }
+}
+
+@media (max-width: 960px) { 
+    .navegacao li {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+
+    .ContatoConfiguracao {
+        flex-direction: column;
+    }
+    .SobreConfiguracao {
+        flex-direction: column;
+    }
+    .EducaçaoConfiguracao {
+        flex-direction: column;
+    }
+    .ProjetosConfiguracao {
+        flex-direction: column;
+    }
+    .ExperienciaConfiguracao {
+        flex-direction: column;
+    }
+    .subTitulos {
+        width: 100%;
+    }
+    .textos {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 790px) {
+    .navegacao a {
+        font-size: 25px;
+    }
+    .navegacao li {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 762px) {
+    .nomes {
         text-align: center; 
     }
-    .conteiner-imagem-meio {
+    
+    .imagem-topo {
+        display: block;
+        margin: 0 auto; 
+    }
+    .imagem-meio img{
+        text-align: center;
+        
+    }
+    .imagem-meio {
         display: block;
         margin: 0 auto; 
     }
     .cabecalho h1,
     .cabecalho h2,
     .cabecalho h3 {
-        margin-left: 0; 
+        
         text-align: center; 
+    }
+    
+}
+
+@media (max-width: 670px) { 
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+    .cabecalho h2 {
+        font-size: 3rem;
+    }
+    .cabecalho h3 {
+        font-size: 15px;
+    }
+    .textos {
+        max-width: 500px;
+    }
+    
+}
+
+@media (max-width:615px) {
+    .navegacao a {
+        font-size: 18px;
+    }
+    .navegacao li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px) {  
+    .textos {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 460px) {  
+    .cabecalho h1 {
+        font-size: 20px;
+    }
+    .cabecalho h2 {
+        font-size: 2rem;
+    }
+    .cabecalho h3 {
+        font-size: 12px;
+    }
+    .navegacao {
+        height: auto;
+        text-align: center;
+    }
+    .navegacao ul {
+        flex-direction: column; 
+    }
+    .navegacao li {
+        padding: 10px; 
+    }
+    .subTitulos {
+        font-size: 27px;
+    }
+    .textos {
+        max-width: 350px;
+        font-size: 17px;
+    }
+    .footer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) { 
+    .textos {
+        max-width: 270px;
     }
 }
 
