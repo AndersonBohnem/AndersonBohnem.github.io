@@ -201,6 +201,9 @@ body {
     .navegacao li { 
         padding: 40px;
     }
+    .imagem-meio {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 960px) { 
