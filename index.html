@@ -1,258 +1,399 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoal</title>
+    <title>Anderson Bohnemberger | Portfólio Back-End</title>
+    <meta
+        name="description"
+        content="Portfólio de Anderson Bohnemberger, Desenvolvedor Back-End Júnior com experiência em Java, Spring Boot, PostgreSQL, Docker, Nginx e automação de testes."
+    >
     <link rel="shortcut icon" href="assets/fotoCapa.ico" type="image/x-icon">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header class="cabecalho">
-
-        <div class="info">
-            <div class="imagem-topo">
-                <img src="https://cdn130.picsart.com/244443079021212.png?r1024x1024" alt="imagem do céu">
+    <div class="page-shell">
+        <div id="inicio" aria-hidden="true"></div>
+        <header class="site-header">
+            <div class="container">
+                <nav class="nav">
+                    <a class="brand" href="#inicio">Anderson Bohnemberger</a>
+                    <ul class="nav-links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="nomes">
-                <h1>Bem-Vindo ao meu site Pessoal:</h1>
-                <h2>Anderson Bohnemberger</h2>
-                <h3>Estudante <span style="color: #f7941d;">Ciência da Computação</span></h3>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Qualidade, automação e backend</span>
+                        <h1>Anderson Bohnemberger</h1>
+                        <p class="hero-subtitle">
+                            Automatizador de testes com mais de dois anos e meio de
+                            experiência, apoio técnico às equipes e vivência prática em backend.
+                        </p>
+                        <p class="hero-text">
+                            Atuo como referência técnica nas squads de automação, apoiando
+                            times na resolução de problemas e na evolução da qualidade de
+                            software com mentalidade Shift-Left. Em paralelo, venho ampliando
+                            minha atuação em backend com Java, Spring Boot, PostgreSQL,
+                            Docker, Nginx, construção de APIs, regras de negócio, deploy e
+                            manutenção de aplicação em produção.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#projetos">Ver projetos</a>
+                            <a class="button button-secondary" href="#contato">Entrar em contato</a>
+                            <a
+                                class="button button-ghost"
+                                href="curriculo-anderson-bohnemberger.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Ver currículo
+                            </a>
+                        </div>
+                        <ul class="hero-highlights" aria-label="Destaques profissionais">
+                            <li>
+                                <strong>2,5+ anos</strong>
+                                <span>em automação de testes</span>
+                            </li>
+                            <li>
+                                <strong>Apoio técnico às equipes</strong>
+                                <span>com atuação em squads, qualidade e Shift-Left</span>
+                            </li>
+                            <li>
+                                <strong>Vivência prática em backend</strong>
+                                <span>com APIs, regras de negócio, deploy e produção</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="photo-card">
+                            <div class="photo-ring"></div>
+                            <img src="assets/main.jpeg" alt="Retrato profissional de Anderson Bohnemberger">
+                        </div>
+
+                        <div class="floating-card floating-card-top">
+                            <span class="floating-label">Atuação atual</span>
+                            <strong>Automatização de testes</strong>
+                        </div>
+
+                        <div class="floating-card floating-card-bottom">
+                            <span class="floating-label">Direção profissional</span>
+                            <strong>Desenvolvedor Backend</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt" id="sobre">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">Sobre</span>
+                        <h2>Qualidade, automação e backend para software confiável</h2>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <p>
+                                Atuo com forte base em qualidade de software e automação,
+                                trazendo essa visão para o desenvolvimento back-end.
+                                Minha experiência combina construção de APIs, implementação
+                                de regras de negócio, suporte à produção e preocupação real
+                                com robustez, observabilidade e evolução técnica.
+                            </p>
+                            <p>
+                                Hoje busco oportunidades como Desenvolvedor Back-End Júnior,
+                                contribuindo com uma base sólida em Java e ecossistema Spring,
+                                além de experiência prática com banco de dados, deploy,
+                                containerização e integração contínua.
+                            </p>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Especialidades</h3>
+                            <ul class="feature-list">
+                                <li>Construção e evolução de APIs REST</li>
+                                <li>Implementação de regras de negócio com Java e Spring Boot</li>
+                                <li>Persistência de dados com PostgreSQL e modelagem relacional</li>
+                                <li>Containerização com Docker e configuração com Nginx</li>
+                                <li>Qualidade de software com automação web, mobile e API</li>
+                                <li>Atuação próxima de CI/CD, health checks e ambiente produtivo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="experiencia">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">Experiência</span>
+                        <h2>Trajetória técnica entre qualidade, backend e produção</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-period">12/2025 - Atual</span>
+                                <span class="timeline-badge">Projeto independente</span>
+                            </div>
+                            <h3>Desenvolvedor Back-End | Race Manager</h3>
+                            <p>
+                                Responsável pelo desenvolvimento e manutenção de uma aplicação
+                                em produção voltada à gestão de eventos de velocross, atuando
+                                na construção de APIs, implementação de regras de negócio e
+                                evolução técnica do backend.
+                            </p>
+                            <ul class="detail-list">
+                                <li>Arquitetura e evolução do backend com Spring Boot</li>
+                                <li>Persistência de dados com PostgreSQL e modelagem relacional</li>
+                                <li>Deploy, servidores, redes e disponibilidade em ambiente cloud</li>
+                                <li>Containerização com Docker e configuração de Nginx como proxy reverso</li>
+                                <li>Parceria ativa na definição de soluções técnicas e melhoria contínua do produto</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-period">10/2023 - Atual</span>
+                                <span class="timeline-badge">Spread Tecnologia</span>
+                            </div>
+                            <h3>Automatizador de Testes</h3>
+                            <p>
+                                Atuo como referência técnica nas squads de automação, apoiando
+                                times na resolução de problemas, evolução de processos e
+                                definição de soluções escaláveis com mentalidade Shift-Left.
+                            </p>
+                            <ul class="detail-list">
+                                <li>Automação web com Selenium, Cucumber, JUnit e Cypress</li>
+                                <li>Testes mobile com Appium e automação de APIs com RestAssured</li>
+                                <li>Documentação e gestão de bugs com Jira, Confluence e ALM Octane</li>
+                                <li>Implementação de health checks e integração contínua com Azure Pipelines</li>
+                                <li>Foco em antecipação de falhas, qualidade e confiabilidade das entregas</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt" id="stack">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">Stack</span>
+                        <h2>Tecnologias com as quais venho construindo e sustentando soluções</h2>
+                    </div>
+
+                    <div class="stack-grid">
+                        <article class="stack-card">
+                            <h3>Back-End</h3>
+                            <div class="tag-cloud">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>APIs REST</span>
+                                <span>Regras de negócio</span>
+                            </div>
+                        </article>
+
+                        <article class="stack-card">
+                            <h3>Dados e infraestrutura</h3>
+                            <div class="tag-cloud">
+                                <span>PostgreSQL</span>
+                                <span>Modelagem de dados</span>
+                                <span>Docker</span>
+                                <span>Nginx</span>
+                                <span>Cloud</span>
+                            </div>
+                        </article>
+
+                        <article class="stack-card">
+                            <h3>Qualidade e testes</h3>
+                            <div class="tag-cloud">
+                                <span>Selenium</span>
+                                <span>Cypress</span>
+                                <span>Appium</span>
+                                <span>RestAssured</span>
+                                <span>JUnit</span>
+                                <span>Cucumber</span>
+                            </div>
+                        </article>
+
+                        <article class="stack-card">
+                            <h3>Fluxo de trabalho</h3>
+                            <div class="tag-cloud">
+                                <span>Azure Pipelines</span>
+                                <span>CI/CD</span>
+                                <span>Jira</span>
+                                <span>Confluence</span>
+                                <span>ALM Octane</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projetos">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">Projetos</span>
+                        <h2>Projetos que reforçam minha transição e atuação em backend</h2>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card project-card-featured">
+                            <div class="project-header">
+                                <span class="project-label">Projeto em produção</span>
+                                <h3>Race Manager</h3>
+                            </div>
+                            <p>
+                                Aplicação voltada à gestão de eventos de velocross, desenvolvida
+                                em parceria, com atuação direta na evolução do backend,
+                                modelagem de dados, deploy e manutenção do ambiente produtivo.
+                            </p>
+                            <div class="tag-cloud">
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>Nginx</span>
+                                <span>Cloud</span>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <span class="project-label">GitHub</span>
+                                <h3>InsertCoin E-commerce Backend</h3>
+                            </div>
+                            <p>
+                                Projeto backend com Spring voltado ao domínio de e-commerce,
+                                usado como vitrine técnica para demonstrar organização de
+                                estrutura, construção de serviços e fundamentos de aplicação
+                                back-end.
+                            </p>
+                            <div class="tag-cloud">
+                                <span>Java</span>
+                                <span>Spring</span>
+                                <span>E-commerce</span>
+                                <span>Backend</span>
+                            </div>
+                            <a
+                                class="project-link"
+                                href="https://github.com/insertCoinBr/insertCoin-ecommerce-backend"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Ver repositório
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt" id="formacao">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">Formação</span>
+                        <h2>Base acadêmica e desenvolvimento contínuo</h2>
+                    </div>
+
+                    <div class="education-grid">
+                        <article class="education-card">
+                            <span class="education-label">Graduação</span>
+                            <h3>Bacharelado em Ciência da Computação</h3>
+                            <p>Atitus Educação</p>
+                            <strong>Cursando | Conclusão prevista em 2026/2</strong>
+                        </article>
+
+                        <article class="education-card">
+                            <span class="education-label">Idiomas</span>
+                            <h3>Inglês - CNA Net</h3>
+                            <p>Nível básico em evolução contínua</p>
+                            <strong>Cursando | Conclusão prevista em 2028</strong>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contato">
+                <div class="container">
+                    <div class="contact-panel">
+                        <div class="contact-copy">
+                            <span class="section-kicker">Contato</span>
+                            <h2>Aberto a oportunidades em desenvolvimento back-end</h2>
+                            <p>
+                                Se você busca alguém com base técnica em qualidade, experiência
+                                prática com backend e atuação próxima de produção, vamos conversar.
+                            </p>
+                            <div class="contact-actions">
+                                <a
+                                    class="button button-primary"
+                                    href="mailto:bohnembergeranderson@gmail.com"
+                                >
+                                    Enviar e-mail
+                                </a>
+                                <a
+                                    class="button button-secondary"
+                                    href="https://wa.me/5554999288655"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Falar no WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Links e informações</h3>
+                            <ul class="contact-list">
+                                <li><span>Localização</span><strong>Ciríaco - RS</strong></li>
+                                <li>
+                                    <span>E-mail</span>
+                                    <a href="mailto:bohnembergeranderson@gmail.com">bohnembergeranderson@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/anderson-bohnemberger" target="_blank" rel="noreferrer">
+                                        anderson-bohnemberger
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>GitHub</span>
+                                    <a href="https://github.com/AndersonBohnem" target="_blank" rel="noreferrer">
+                                        AndersonBohnem
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>Currículo</span>
+                                    <a href="curriculo-anderson-bohnemberger.pdf" target="_blank" rel="noreferrer">Abrir PDF</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>Anderson Bohnemberger</p>
+                <a href="#inicio">Voltar ao topo</a>
             </div>
-        </div>
-        
-        <div class="imagem-meio">
-            <img src="assets/Foto .jpg"
-                  alt="foto de pessoa" >
-        </div>
-    </header>
-
-    <nav>
-
-        <div class="navegacao">
-            <ul>
-                <li><a href="#Sobre" class="navegacaoSobre">Sobre</a></li>
-                <li><a href="#Experiência" class="navegacaoExperiencia">Experiência</a></li>
-                <li><a href="#Educação" class="navegacaoEducacao">Educação</a></li>
-                <li><a href="#Projetos" class="navegacaoProjetos">Projetos</a></li>
-                <li><a href="#Contato" class="navegacaocontato">Contato</a></li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <main>
-
-        <article id="Sobre" class="SobreConfiguracao">
-            <h2 class="subTitulos">
-                Sobre
-            </h2>
-
-            <div class="textos">
-                <p> 
-                    <span style="color: #d58e14;" > Estudante de Ciência da Computação da ATITUS</span>
-                </p>
-                <p >
-                    No primeiro semestre tivemos conhecimentos com a linguagem Python e
-                    Inteligência artificial que foram 6 meses. Logo no segundo adquirimos
-                    muitas práticas em especial a Linguagem Java, tendo introdução e
-                    desenvolvimento em Html, Css, JavaScript, conceitos em design para
-                    melhor aperfeiçoamento de projetos.
-                </p>
-                <p>
-                    Sou comunicativo, dedicado, tento fazer o meu melhor para
-                    resolver um problema e tenho facilidade de trabalhar em grupos.
-                    Em 2023 comecei a fazer curso de Inglês para melhorar meus
-                    conhecimentos e ter uma oportunidade de crescimento.
-                    Possuo carteira de Motorista AB para facilitar o deslocamento em
-                    casos que haja a necessidade de realizar uma viagem.
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Nome:</span> Anderson Bohnemberger
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Email:</span> bohnembergeranderson@gmail.com
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Número:</span> (54) 99928-8655
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Endereço:</span> Ciríaco Rio Grande do Sul
-                </p>
-
-                <a style= "color: #5C3404;" href="#">Voltar ao Topo</a>
-                <p></p>
-            </div>
-        </article>
-
-        <article id="Experiência" class="ExperienciaConfiguracao">
-
-            <h2 class="subTitulos">
-                Experiência
-            </h2>
-
-            <div class="textos">
-                <p>
-                    Operador de maquina de corte de calçados <span style="color: #d58e14;">2020-2023</span>
-                </p>
-                <p>
-                    Trabalhei por 3 anos na Bonger, sendo operador de maquina sempre me dedicando 
-                    e provendo o melhor para a empresa minha função era cortar e arrumar 
-                    os calçados nas caixas.
-                </p>
-                <p>
-                    Testador Junior na Spread Tecnologia <span style="color: #d58e14;">2023-Atual</span>
-                </p>
-                <p>
-                    Atualmente sou testador Junior na Spread trabalhando com a linguagem <span style="color: #d58e14;">Java </span>
-                    utilizando o framework do selenium. Realizamos a automação de testes WEB, Mobile e API.
-                </p>
-                <a style= "color: #5C3404;" href="#">Voltar ao Topo</a>
-                <p></p>
-            </div>
-            
-        </article>
-
-        <article id="Educação" class="EducaçaoConfiguracao">
-
-            <h2 class="subTitulos">
-                Educação
-            </h2>
-
-            <div class="textos">
-                <p>
-                    Estudante de Ciência da Computação <span style="color: #d58e14;">ATITUS 2023-Atual</span>
-                </p>
-                <p>
-                    Atualmente no 4 semestre com conhecimentos aprofundados nas
-                    linguagens de programação Java, Python. E linguem de marcação como Html e estilos CSS.
-                    Inteligência artificial, Banco de dados, Engenharia de Software, Cloud dentre outros.
-                </p>
-                <p>
-                    Estudante de Inglês <span style="color: #d58e14;">CNA Net 2023-2027</span>
-                </p>
-                <p>
-                    Atualmente estou no Progression One começando me aperfeiçoar para o mercados de trabalho, 
-                    onde o inglês é muito importante, principalmente na Ciência da Computação.
-                </p>
-                <a style= "color: #5C3404;" href="#">Voltar ao Topo</a>
-                <p></p>
-            </div>
-        </article>
-
-        <article id="Projetos" class="ProjetosConfiguracao">
-
-            <h2 class="subTitulos">
-                Projetos
-            </h2>
-
-            <div class="textos">
-                
-                <p>
-                    Ao longo dessa jornada conclui alguns projetos sendo em Java, Python, Html, CSS e Java Script,
-                    e um pouco de React.
-                </p>
-
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/Space-Marker">Space-Marker:</a>
-                </p>
-                <p>
-                    Foi um projeto utilizando a linguagem python com objetivo de indentificar, 
-                    nomear, criando pontos e demarcando a distancia entre eles.
-                </p>
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/Locadora_de_Veiculos">Locadora de Veículos:</a>
-                </p>
-                <P>
-                    Esse foi um trabalho da faculdade utilizando a linguagem Java que teve como objetivo demonstrar 
-                    habilidades com a utilização de herança, polimorfismo e reaproveitamento de código.
-                </P>
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/Tipo_de_Jogos">Tipos de Jogos:</a>
-                </p>
-                <p>
-                    Esse foi um trabalho da faculdade utilizando Html e CSS, 
-                    que consistia em criar um site que mostra alguns tipos de 
-                    jogos e falar sobre eles.
-                </p>
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/Site_Pessoal">Site Pessoal:</a>
-                </p>
-                <p>
-                    Esse trabalho teve como objetivo mostrar habilidades em Html e CSS, 
-                    criando um site pessoal contendo informações e fazendo o design do mesmo.
-                </p>
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/AtituSound">AtituSound</a>
-                </p>
-                <p>
-                    Foi um trabalho na linguagem Java, utilizando o eclipse como IDE, teve como 
-                    objetivo criar uma API Rest para um aplicativo de música.
-                </p>
-                <p>
-                    <a style="color: #d58e14;" href="https://github.com/AndersonBohnem/cryptographyCifraDeCesar">cryptographyCifraDeCesar</a>
-                </p>
-                <p>
-                    Foi um trabalho na linguagem Java onde o objetivo era implementar uma criptografia muito utilizada no passado 
-                    que era a Criptografia de Cesar na qual o objetivo era utilizar uma chave e misturar as letras em ordem alfabetica somando com a chave. 
-                </p>
-                <a style= "color: #5C3404;" href="#">Voltar ao Topo</a>
-                <p></p>
-
-            </div>
-
-        </article>
-
-        <article id="Contato" class="ContatoConfiguracao">
-
-            <h2 class="subTitulos">
-                Contato
-            </h2>
-
-            <div class="textos">
-
-                <p>
-                    <span style="color: #d58e14;">Nome:</span> Anderson Bohnemberger
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Data de nascimento: </span>12/10/2004
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Telefone: </span>(54) 999288655
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Linkedin: </span><a style="color: black;" href="https://www.linkedin.com/in/anderson-bohnemberger">anderson-bohnemberger</a>
-                </p>
-                <p>
-                    <span style="color: #d58e14;">GitHub: </span><a style="color: black;" href="https://github.com/AndersonBohnem">AndersonBohnem</a>
-                </p>
-                <p>
-                    <span style="color: #d58e14;">E-mail: </span> bohnembergeranderson@gmail.com
-                </p>
-                <p>
-                    <span style="color: #d58e14;">Nacionalidade: </span>Brasileiro
-                </p>
-                <a style= "color: #5C3404;" href="#">Voltar ao Topo</a>
-                <p></p>
-
-            </div>
-
-        </article>
-
-    </main>
-
-    <footer class="footer">
-
-        <p>
-            Desenvolvido por Anderson Bohnemberger 11/2023
-        </p>
-
-    </footer>
-    
+        </footer>
+    </div>
 </body>
-
 </html>
