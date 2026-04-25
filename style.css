@@ -33,7 +33,6 @@ section[id] {
 
 body {
     margin: 0;
-    min-width: 320px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: var(--text);
     overflow-x: hidden;
@@ -105,9 +104,10 @@ main {
 
 .brand {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 1.05rem;
+    font-size: clamp(0.94rem, 2.1vw, 1.05rem);
     font-weight: 700;
     letter-spacing: -0.03em;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -115,6 +115,10 @@ main {
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 1rem 1.4rem;
+}
+
+.nav-links li {
+    flex: 0 0 auto;
 }
 
 .nav-links a {
@@ -175,6 +179,7 @@ main {
 .contact-copy h2 {
     font-family: "Space Grotesk", sans-serif;
     letter-spacing: -0.045em;
+    text-wrap: balance;
 }
 
 .hero-copy h1 {
@@ -700,6 +705,10 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .hero-grid {
+        gap: 2rem;
+    }
+
     .hero-copy h1 {
         max-width: none;
     }
@@ -711,26 +720,23 @@ main {
 
     .photo-card {
         margin: 0 auto;
-    }
-
-    .floating-card-top {
-        left: 1rem;
-    }
-
-    .floating-card-bottom {
-        right: 1rem;
+        width: min(100%, 420px);
     }
 }
 
 @media (max-width: 860px) {
     :root {
-        --header-offset: 8.5rem;
+        --header-offset: 7.9rem;
+    }
+
+    .site-header {
+        padding: 0.85rem 0 0.75rem;
     }
 
     .nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.9rem;
+        gap: 0.7rem;
     }
 
     .nav-links {
@@ -738,7 +744,8 @@ main {
         flex-wrap: nowrap;
         justify-content: flex-start;
         overflow-x: auto;
-        padding-bottom: 0.2rem;
+        gap: 0.8rem;
+        padding-bottom: 0.35rem;
         scrollbar-width: none;
     }
 
@@ -746,8 +753,20 @@ main {
         display: none;
     }
 
+    .nav-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.2rem;
+        padding: 0.35rem 0.85rem;
+        border: 1px solid rgba(16, 33, 61, 0.08);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        white-space: nowrap;
+        font-size: 0.92rem;
+    }
+
     .hero {
-        padding-top: 1.4rem;
+        padding-top: 1.1rem;
     }
 
     .hero-highlights,
@@ -755,19 +774,93 @@ main {
     .education-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero-copy h1 {
+        font-size: clamp(2.8rem, 11vw, 4.2rem);
+    }
+
+    .hero-subtitle {
+        margin-top: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+    .hero-text {
+        font-size: 0.98rem;
+        line-height: 1.75;
+    }
+
+    .hero-visual {
+        display: grid;
+        gap: 1rem;
+        padding-top: 0.2rem;
+    }
+
+    .floating-card {
+        position: static;
+        margin: 0;
+    }
+
+    .section-heading {
+        margin-bottom: 1.4rem;
+    }
+
+    .section-heading h2,
+    .contact-copy h2 {
+        font-size: clamp(1.9rem, 8vw, 2.8rem);
+    }
+
+    .timeline-card h3,
+    .project-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-panel {
+        gap: 1.2rem;
+    }
 }
 
 @media (max-width: 640px) {
+    :root {
+        --header-offset: 7.8rem;
+    }
+
     .container {
-        width: min(calc(100% - 1.2rem), var(--container));
+        width: min(calc(100% - 1.4rem), var(--container));
     }
 
     .section {
-        padding: 1rem 0 4rem;
+        padding: 0.8rem 0 3.4rem;
     }
 
     .hero-copy h1 {
-        font-size: clamp(2.7rem, 16vw, 4rem);
+        font-size: clamp(2.35rem, 13vw, 3.4rem);
+        line-height: 1;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        font-size: 0.95rem;
+    }
+
+    .hero-actions,
+    .contact-actions {
+        gap: 0.7rem;
+    }
+
+    .hero-highlights {
+        margin-top: 1.6rem;
+    }
+
+    .hero-highlights strong {
+        font-size: 0.96rem;
+    }
+
+    .hero-highlights span {
+        font-size: 0.92rem;
     }
 
     .photo-card {
@@ -775,13 +868,15 @@ main {
         border-radius: 26px;
     }
 
-    .photo-card img {
-        border-radius: 20px;
+    .photo-ring {
+        inset: -8px auto auto -10px;
+        width: 120px;
+        height: 120px;
+        filter: blur(8px);
     }
 
-    .floating-card {
-        position: static;
-        margin-top: 1rem;
+    .photo-card img {
+        border-radius: 20px;
     }
 
     .hero-highlights li,
@@ -804,7 +899,56 @@ main {
         width: 100%;
     }
 
+    .timeline-meta {
+        gap: 0.45rem;
+    }
+
+    .tag-cloud span {
+        font-size: 0.88rem;
+        padding: 0.58rem 0.82rem;
+    }
+
     .footer-content {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    :root {
+        --header-offset: 8.1rem;
+    }
+
+    .brand {
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        padding: 0.32rem 0.72rem;
+        font-size: 0.88rem;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(2rem, 12vw, 2.7rem);
+    }
+
+    .section-heading h2,
+    .contact-copy h2 {
+        font-size: clamp(1.7rem, 8vw, 2.2rem);
+    }
+
+    .timeline-card h3,
+    .project-header h3 {
+        font-size: 1.16rem;
+    }
+
+    .hero-highlights li,
+    .about-card,
+    .timeline-card,
+    .stack-card,
+    .project-card,
+    .education-card,
+    .contact-card,
+    .contact-panel {
+        padding: 1.05rem;
     }
 }
